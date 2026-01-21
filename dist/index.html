@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/lucide-react/lucide/main/icons/code.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags Valencia -->
+    <title>Edgar Roca | Diseño Web Valencia & SEO - Experiencias Digitales</title>
+    <meta name="description" content="Diseñador web y desarrollador en Valencia. Creo sitios web corporativos, landing pages y e-commerce con estética cinematográfica y optimización SEO avanzada. Posiciona tu marca." />
+    <meta name="keywords" content="diseño web valencia, desarrollo web valencia, experto seo valencia, programador web valencia, landing page valencia, edición de vídeo valencia, diseño ux ui valencia" />
+    <meta name="author" content="Edgar Roca" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Geo Tags (Valencia, Spain) -->
+    <meta name="geo.region" content="ES-VC" />
+    <meta name="geo.placename" content="Valencia" />
+    <meta name="geo.position" content="39.4699; -0.3763" />
+    <meta name="ICBM" content="39.4699, -0.3763" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://edgarroca.com/" />
+    <meta property="og:title" content="Edgar Roca | Diseño Web & SEO en Valencia" />
+    <meta property="og:description" content="No hago webs, construyo atmósferas digitales. Servicios de desarrollo web, dirección de arte y posicionamiento SEO en Valencia." />
+    <meta property="og:image" content="https://i.ibb.co/bMgDRXnv/IMG-0436.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://edgarroca.com/" />
+    <meta property="twitter:title" content="Edgar Roca | Creative Developer" />
+    <meta property="twitter:description" content="Diseño Web y SEO en Valencia. Calidad cinematográfica para tu presencia digital." />
+    <meta property="twitter:image" content="https://i.ibb.co/bMgDRXnv/IMG-0436.jpg" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Schema for Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Edgar Roca Diseño Web & SEO",
+        "image": "https://i.ibb.co/bMgDRXnv/IMG-0436.jpg",
+        "@id": "https://edgarroca.com",
+        "url": "https://edgarroca.com",
+        "telephone": "+34600000000",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Centro",
+          "addressLocality": "Valencia",
+          "postalCode": "46001",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 39.4699,
+          "longitude": -0.3763
+        },
+        "priceRange": "$$",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
+            colors: {
+              bronze: { 500: '#8c7e74' },
+              stone: { 950: '#0c0a09' }
+            },
+            animation: {
+              'fade-in': 'fadeIn 1s ease-out forwards',
+              'slide-up': 'slideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'slide-down': 'slideDown 0.5s ease-out forwards',
+              'noise': 'noise 0.5s steps(5) infinite',
+            },
+            keyframes: {
+              fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+              slideUp: {
+                '0%': { opacity: '0', transform: 'translateY(40px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              slideDown: {
+                '0%': { opacity: '1', transform: 'translateY(0)' },
+                '100%': { opacity: '0', transform: 'translateY(40px)' },
+              },
+              noise: {
+                '0%': { transform: 'translate(0,0)' },
+                '10%': { transform: 'translate(-5%,-5%)' },
+                '100%': { transform: 'translate(5%,0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    
+
+    
+    <style>
+      body { background-color: #0c0a09; color: #f5f5f0; margin: 0; }
+      #root { min-height: 100vh; display: flex; flex-direction: column; }
+      .loading-state { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; color: #444; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; gap: 20px; }
+      .spinner { width: 20px; height: 20px; border: 2px solid #222; border-top-color: #8c7e74; border-radius: 50%; animation: spin 1s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      #error-display { display: none; padding: 40px; color: #ff5555; font-family: monospace; font-size: 14px; position: fixed; inset: 0; background: #0c0a09; z-index: 9999; text-align: center; }
+      .error-title { color: white; font-size: 20px; margin-bottom: 20px; display: block; }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@19.0.0",
+        "react/": "https://esm.sh/react@19.0.0/",
+        "react-dom": "https://esm.sh/react-dom@19.0.0",
+        "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+        "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+        "lucide-react": "https://esm.sh/lucide-react@0.475.0?external=react",
+        "@emailjs/browser": "https://esm.sh/@emailjs/browser@4.1.0"
+      }
+    }
+    </script>
+  <script type="module" crossorigin src="/assets/index-Cl6QhFd9.js"></script>
+</head>
+  <body class="antialiased">
+    <div id="root">
+      <div class="loading-state">
+        <div class="spinner"></div>
+        <span>Iniciando...</span>
+      </div>
+    </div>
+    <div id="error-display">
+      <span class="error-title">Error de sistema</span>
+      <div id="error-content"></div>
+    </div>
+    
+    <script>
+      window.onerror = function(msg, url, line) {
+        const display = document.getElementById('error-display');
+        const content = document.getElementById('error-content');
+        display.style.display = 'block';
+        content.innerHTML = 'Fallo de carga: ' + msg + '<br><br>Ubica tu terminal en la consola para más detalles.';
+      };
+      window.addEventListener('unhandledrejection', function(event) {
+        const display = document.getElementById('error-display');
+        const content = document.getElementById('error-content');
+        display.style.display = 'block';
+        content.innerHTML = 'Error de módulo: ' + event.reason;
+      });
+    </script>
+</body>
+</html>
