@@ -56,7 +56,7 @@ export const Pricing: React.FC<PricingProps> = ({ lang }) => {
           id: 'essence',
           name: 'Essence',
           tagline: 'Strategic Landing Page',
-          price: '950€',
+          price: '750€',
           description: 'It is not just a page, it is a visual sales funnel. Ideal for launching a product or service quickly.',
           features: [
             'Cinematic One Page Design',
@@ -71,7 +71,7 @@ export const Pricing: React.FC<PricingProps> = ({ lang }) => {
           id: 'identity',
           name: 'Identity',
           tagline: 'Corporate Website',
-          price: '2.400€',
+          price: '1.800€',
           description: 'Your digital headquarters. For companies looking for authority, trust, and a robust content management system.',
           features: [
             '4-6 Custom Pages',
@@ -87,7 +87,7 @@ export const Pricing: React.FC<PricingProps> = ({ lang }) => {
           id: 'ecosystem',
           name: 'Ecosystem',
           tagline: 'E-commerce / Custom',
-          price: '4.200€',
+          price: '3.200€',
           description: 'A sales machine that doesn\'t break. Cutting-edge technology for businesses that live on online sales.',
           features: [
             'Headless E-commerce (Shopify/Stripe)',
@@ -105,7 +105,7 @@ export const Pricing: React.FC<PricingProps> = ({ lang }) => {
         id: 'essence',
         name: 'Essence',
         tagline: 'Landing Page Estratégica',
-        price: '950€',
+        price: '750€',
         description: 'No es solo una página, es un embudo de ventas visual. Ideal para lanzar un producto o servicio rápidamente.',
         features: [
           'Diseño One Page Cinematic',
@@ -120,7 +120,7 @@ export const Pricing: React.FC<PricingProps> = ({ lang }) => {
         id: 'identity',
         name: 'Identity',
         tagline: 'Web Corporativa',
-        price: '2.400€',
+        price: '1.800€',
         description: 'Tu sede digital. Para empresas que buscan autoridad, confianza y un sistema de gestión de contenidos robusto.',
         features: [
           '4-6 Páginas Personalizadas',
@@ -136,7 +136,7 @@ export const Pricing: React.FC<PricingProps> = ({ lang }) => {
         id: 'ecosystem',
         name: 'Ecosystem',
         tagline: 'E-commerce / A Medida',
-        price: '4.200€',
+        price: '3.200€',
         description: 'Una máquina de ventas que no se rompe. Tecnología punta para negocios que viven de la venta online.',
         features: [
           'E-commerce Headless (Shopify/Stripe)',
