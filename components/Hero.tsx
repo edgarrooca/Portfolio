@@ -39,9 +39,9 @@ export const Hero: React.FC<HeroProps> = ({ lang }) => {
       lg:justify-center lg:pt-0 lg:pb-0        /* Desktop: Center alignment */
     ">
       
-      {/* Noise Texture Overlay */}
-      <div className="absolute inset-0 z-[1] opacity-[0.015] pointer-events-none" style={{ willChange: 'transform' }}>
-        <div className="absolute inset-0 animate-noise bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+      {/* Noise Texture Overlay - Reduced opacity and removed animation */}
+      <div className="absolute inset-0 z-[1] opacity-[0.008] pointer-events-none">
+        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
       </div>
 
       {/* 

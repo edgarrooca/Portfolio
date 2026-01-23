@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { Send, Check, AlertCircle, Loader2 } from 'lucide-react';
+import { Send, Check, AlertCircle, Loader2, ArrowRight } from 'lucide-react';
 import { Language } from '../types';
 
 interface ContactProps {
@@ -156,10 +156,10 @@ export const Contact: React.FC<ContactProps> = ({ lang }) => {
                 <button
                   type="submit"
                   disabled={status === 'sending' || status === 'success'}
-                  className={`group flex items-center gap-4 text-xs uppercase tracking-[0.2em] font-bold transition-all duration-300 ${
-                    status === 'success' ? 'text-emerald-500' : 
-                    status === 'error' ? 'text-red-500' :
-                    'text-stone-400 hover:text-white'
+                  className={`group w-full max-w-xs py-4 flex items-center justify-center gap-2 text-xs uppercase tracking-widest font-bold transition-all duration-300 ${
+                    status === 'sending' || status === 'success' ? 'bg-emerald-500 text-white' :
+                    status === 'error' ? 'bg-red-500 text-white' :
+                    'border border-stone-700 text-white hover:bg-white hover:text-stone-950'
                   }`}
                 >
                   {status === 'sending' ? (
@@ -180,7 +180,7 @@ export const Contact: React.FC<ContactProps> = ({ lang }) => {
                   ) : (
                     <>
                       {t.send}
-                      <span className="block w-12 h-px bg-stone-700 group-hover:bg-white transition-colors"></span>
+                      <ArrowRight className="h-4 w-4" />
                     </>
                   )}
                 </button>
