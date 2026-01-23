@@ -20,9 +20,9 @@ export const Contact: React.FC<ContactProps> = ({ lang }) => {
       status: "Aceptando nuevos proyectos",
       mind: "¿Qué tienes en mente?",
       options: {
-        essence: "Plan Essence (Landing Page) - Desde 950€",
-        identity: "Plan Identity (Web Corporativa) - Desde 2.400€",
-        ecosystem: "Plan Ecosystem (E-commerce / App) - Desde 4.200€",
+        essence: "Plan Essence (Landing Page) - Desde 600€",
+        identity: "Plan Identity (Web Corporativa) - Desde 1.400€",
+        ecosystem: "Plan Ecosystem (E-commerce / App) - Desde 2.500€",
         other: "Consultoría / Otro"
       },
       send: "Enviar Mensaje",
@@ -41,9 +41,9 @@ export const Contact: React.FC<ContactProps> = ({ lang }) => {
       status: "Accepting new projects",
       mind: "What do you have in mind?",
       options: {
-        essence: "Essence Plan (Landing Page) - From 950€",
-        identity: "Identity Plan (Corporate Web) - From 2.400€",
-        ecosystem: "Ecosystem Plan (E-commerce / App) - From 4.200€",
+        essence: "Essence Plan (Landing Page) - From 600€",
+        identity: "Identity Plan (Corporate Web) - From 1.400€",
+        ecosystem: "Ecosystem Plan (E-commerce / App) - From 2.500€",
         other: "Consulting / Other"
       },
       send: "Send Message",
