@@ -235,6 +235,33 @@ export const Portfolio: React.FC<PortfolioProps> = ({ lang }) => {
     // --- WEB PROJECTS DATA ---
     const webProjects: PortfolioItem[] = [
       {
+        id: 'web-flesh-fest',
+        type: 'web',
+        title: 'Flesh Fest',
+        category: l === 'en' ? 'Video Game / Landing Page' : 'Videojuego / Landing Page',
+        client: 'Indie Dev',
+        year: '2025',
+        url: 'https://edgarroca-cei.github.io/',
+        imageUrl: 'https://i.postimg.cc/43W1XfBQ/Captura-de-pantalla-2026-01-30-172754.png',
+        mobileImageUrl: 'https://i.postimg.cc/jd90STkq/Captura-de-pantalla-2026-01-30-175230.png',
+        gallery: [
+          'https://i.postimg.cc/43W1XfBQ/Captura-de-pantalla-2026-01-30-172754.png'
+        ],
+        description: l === 'en' 
+          ? 'A Single Page website for an upcoming 2D horror game, completely hand-illustrated.'
+          : 'Una web Single Page de un videojuego de terror 2d completamente ilustrado a mano que va a salir próximamente.',
+        challenge: l === 'en'
+          ? 'To capture the eerie and hand-made aesthetic of the game in a web format.'
+          : 'Capturar la estética inquietante y artesanal del juego en un formato web.',
+        solution: l === 'en'
+          ? 'I created an immersive landing page that showcases the game art and atmosphere directly.'
+          : 'Creé una landing page inmersiva que muestra el arte y la atmósfera del juego directamente.',
+        impact: l === 'en'
+          ? 'Generates hype and provides a central hub for the upcoming game release.'
+          : 'Genera expectación y proporciona un punto central para el próximo lanzamiento del juego.',
+        stack: ['HTML', 'CSS', 'JavaScript', 'Hand-drawn Art']
+      },
+      {
         id: 'web-1',
         type: 'web',
         title: 'Librería García Lorca',
