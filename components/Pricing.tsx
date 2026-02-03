@@ -105,7 +105,7 @@ export const Pricing: React.FC<PricingProps> = ({ lang }) => {
         id: 'essence',
         name: 'Essence',
         tagline: 'Landing Page Estratégica',
-        price: '600€',
+        price: '350€',
         description: 'No es solo una página, es un embudo de ventas visual. Ideal para lanzar un producto o servicio rápidamente.',
         features: [
           'Diseño One Page Cinematic',
@@ -136,7 +136,7 @@ export const Pricing: React.FC<PricingProps> = ({ lang }) => {
         id: 'ecosystem',
         name: 'Ecosystem',
         tagline: 'E-commerce / A Medida',
-        price: '2.500€',
+        price: '1.500€',
         description: 'Una máquina de ventas que no se rompe. Tecnología punta para negocios que viven de la venta online.',
         features: [
           'E-commerce Headless (Shopify/Stripe)',
@@ -176,8 +176,8 @@ export const Pricing: React.FC<PricingProps> = ({ lang }) => {
             <div
               key={plan.id}
               className={`relative p-8 lg:p-10 border transition-all duration-500 group flex flex-col ${plan.recommended
-                  ? 'bg-stone-900 border-bronze-900/50 hover:border-bronze-600'
-                  : 'bg-stone-950 border-stone-800 hover:border-stone-600'
+                ? 'bg-stone-900 border-bronze-900/50 hover:border-bronze-600'
+                : 'bg-stone-950 border-stone-800 hover:border-stone-600'
                 } ${
                 /* Logic to span the last item on tablet (md) to fill the grid */
                 index === 2 ? 'md:col-span-2 lg:col-span-1' : ''
@@ -209,8 +209,8 @@ export const Pricing: React.FC<PricingProps> = ({ lang }) => {
               </p>
 
               <ul className={`mb-10 border-t border-stone-800/50 pt-8 ${index === 2
-                  ? 'space-y-4 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-4 lg:block lg:space-y-4'
-                  : 'space-y-4'
+                ? 'space-y-4 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-4 lg:block lg:space-y-4'
+                : 'space-y-4'
                 }`}>
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-stone-300">
